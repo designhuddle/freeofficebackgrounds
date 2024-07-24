@@ -1,0 +1,101 @@
+// ==========================================================================
+// Section
+// ==========================================================================
+
+.section {
+	padding: 4rem 0;
+}
+
+// Section message
+.section--message {
+	font-size: 1.6rem;
+	letter-spacing: -0.01em;
+	line-height: 1.6;
+	font-weight: 500;
+	display: flex;
+	align-items: center;
+	height: 100dvh;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+
+	@include breakpoint-down(mobile) {
+		display: flex;
+	}
+
+	@include breakpoint-down(mobile-small) {
+		font-size: 1.4rem;
+	}
+
+	.section__logo {
+		margin-bottom: 5.4rem;
+	}
+
+	.section__inner {
+		text-align: center;
+		max-width: 40rem;
+		margin: 0 auto;
+	}
+}
+
+.section-text {
+	font-family: 'Metropolis', sans-serif;
+	font-weight: 400;
+	background-color: #ffffff;
+	padding: 8rem 0;
+
+	.section__shell {
+		max-width: 97.6rem;
+	}
+
+	.section__head {
+		padding: 6rem 0;
+		text-align: center;
+		color: #000;
+
+		h2 {
+			margin-bottom: 1rem;
+			font-size: 4.8rem;
+			font-weight: 300;
+			letter-spacing: -0.047em;
+		}
+
+		h3 {
+			font-size: 1.9rem;
+			color: #898a8b;
+			font-weight: 400;
+		}
+	}
+
+	.section__body {
+		color: #1b1e2a;
+		line-height: 1.74;
+
+		p {
+			font-size: 1.9rem;
+			text-align: justify;
+			margin-bottom: 2.5rem;
+		}
+
+		h3 {
+			font-size: 1.9rem;
+			font-weight: 700;
+			margin: 3.5rem 0 1rem;
+			text-decoration: underline;
+			line-height: 1.27;
+			letter-spacing: -0.047em;
+		}
+
+		li {
+			padding-left: 1rem;
+			margin-left: 2.5rem;
+		}
+
+		a {
+			text-decoration: underline;
+			color: #4239ff;
+		}
+	}
+}

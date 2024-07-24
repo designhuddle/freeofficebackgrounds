@@ -1,0 +1,68 @@
+// ==========================================================================
+// Header
+// ==========================================================================
+
+.header {
+	padding: 1.8rem 0;
+	background-color: var(--c-white);
+	border-bottom: 1px solid var(--c-gray);
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 100;
+
+	.header__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 2rem;
+
+		@include breakpoint-down(small-desktop) {
+			flex-wrap: wrap;
+		}
+	}
+
+	.header__actions {
+		display: flex;
+		align-items: center;
+		gap: 5.4rem;
+
+		@include breakpoint-down(small-desktop) {
+			gap: 3rem;
+			order: 3;
+			flex-basis: 100%;
+			justify-content: center;
+		}
+	}
+
+	.header__actions-label {
+		font-size: 1.2rem;
+		display: inline-block;
+		margin-right: 2.9rem;
+		font-weight: 700;
+	}
+
+	.header__actions-inner {
+		display: flex;
+		align-items: center;
+	}
+}
+
+// header alt
+.header--alt {
+	padding: 1.2rem 0;
+}
+
+// Header sticky
+.header--sticky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: transparent;
+	border: none;
+
+	.header__shell {
+		--shell-gutter: 1.8rem;
+	}
+}

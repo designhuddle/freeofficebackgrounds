@@ -1,0 +1,45 @@
+// ==========================================================================
+// Grid
+// ==========================================================================
+
+.grid {
+	--grid-cols: 1;
+	--grid-gutter: 2.3rem 2.4rem;
+
+	display: grid;
+	grid-template-columns: repeat(var(--grid-cols), 1fr);
+	gap: var(--grid-gutter);
+}
+
+// Grid size 1of2
+.grid--size-1of2 {
+	--grid-cols: 2;
+
+	@media (width >= 1600px) {
+		--grid-cols: 3;
+	}
+
+	@media (width< 1000px) {
+		--grid-cols: 3;
+	}
+}
+
+// Grid size 1of3
+.grid--size-1of3 {
+	--grid-cols: 3;
+}
+
+// Grid size 1of4
+.grid--size-1of4 {
+	--grid-cols: 4;
+}
+
+// Grid size 1of5
+.grid--size-1of5 {
+	--grid-cols: 5;
+}
+
+// Grid size 1of6
+.grid--size-1of6 {
+	--grid-cols: 6;
+}

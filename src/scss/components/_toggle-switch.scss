@@ -1,0 +1,52 @@
+/* ------------------------------------------------------------ *\
+Toggle switch
+\* ------------------------------------------------------------ */
+
+.toggle-switch {
+	position: relative;
+	display: flex;
+	gap: 1.4rem;
+	align-items: center;
+
+	.toggle__slider {
+		position: relative;
+		cursor: pointer;
+		background-color: var(--c-blue);
+		-webkit-transition: 0.4s;
+		transition: 0.4s;
+		border-radius: 3rem;
+		border-radius: 3rem;
+		width: 7rem;
+		height: 3.9rem;
+	}
+
+	input {
+		display: none;
+	}
+
+	.toggle__slider:before {
+		content: '';
+		position: absolute;
+		height: 2.7rem;
+		width: 2.7rem;
+		left: 0.8rem;
+		bottom: 0.6rem;
+		background-color: var(--c-white);
+		transition: all var(--t-duration);
+		border-radius: 50%;
+		z-index: 1;
+	}
+
+	input:checked + .toggle__slider:before {
+		transform: translateX(2.7rem);
+	}
+
+	input:checked + .toggle__slider span {
+		opacity: 0;
+	}
+
+	span {
+		font-size: 1.5rem;
+		font-weight: 500;
+	}
+}

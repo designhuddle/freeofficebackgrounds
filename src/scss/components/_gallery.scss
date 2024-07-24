@@ -1,0 +1,39 @@
+// ==========================================================================
+// Gallery
+// ==========================================================================
+
+.gallery {
+	padding-inline: 1.2rem;
+
+	.gallery__image {
+		display: block;
+		aspect-ratio: 16/9.1;
+		position: relative;
+		opacity: 1;
+		transition: opacity 1s ease-in-out; /* Smooth transition */
+
+		&:hover:before {
+			opacity: 1;
+		}
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border: 1rem solid var(--c-blue);
+			opacity: 0;
+			transition: opacity var(--t-duration);
+		}
+	}
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		opacity: 0;
+		transition: opacity 1s ease-in-out; /* Smooth transition */
+	}
+}

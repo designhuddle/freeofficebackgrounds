@@ -1,0 +1,32 @@
+// ==========================================================================
+// Shell
+// ==========================================================================
+
+.shell {
+	--shell-max-width: 144.2rem;
+	--shell-gutter: 1.5rem;
+
+	max-width: calc(var(--shell-max-width) + (var(--shell-gutter) * 2));
+	padding-inline: var(--shell-gutter);
+	margin-inline: auto;
+	width: 100%;
+}
+
+// Shell fluid
+.shell--fluid {
+	max-width: none;
+}
+
+// Shell large gap
+.shell--large-gap {
+	padding-inline: 7rem;
+
+	@include breakpoint-down(large-desktop) {
+		padding-inline: 5rem;
+	}
+}
+
+// Shell small
+.shell--small {
+	--shell-max-width: 131.4rem;
+}

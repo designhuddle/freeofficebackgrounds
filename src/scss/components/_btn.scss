@@ -1,0 +1,66 @@
+// ==========================================================================
+// Btn
+// ==========================================================================
+
+.btn {
+	display: inline-flex;
+	vertical-align: middle;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	text-decoration: none;
+	text-align: center;
+	appearance: none;
+	font-size: 1.5rem;
+	background-color: var(--c-blue);
+	color: var(--c-white);
+	line-height: 1;
+	padding: 1.4rem 3rem;
+	border-radius: 0.6rem;
+	font-weight: 500;
+	transition: background-color var(--t-duration);
+
+	&:hover {
+		background-color: var(--c-base);
+	}
+}
+
+// Black button
+.btn__black {
+	background-color: var(--c-base);
+	color: var(--c-white);
+
+	&:hover {
+		opacity: 0.8;
+	}
+}
+
+// Btn block
+.btn--block {
+	display: block;
+	padding-inline: 0;
+}
+
+// btn medium
+.btn--medium {
+	font-size: 2.2rem;
+	padding: 2.2rem 4.1rem;
+	border-radius: 3rem;
+	font-weight: 600;
+	min-width: 31.8rem;
+	letter-spacing: -0.01em;
+
+	@include breakpoint-down(large-desktop) {
+		font-size: 2rem;
+		min-width: 28rem;
+		padding: 1.6rem 3rem;
+	}
+
+	@include breakpoint-down(small-desktop) {
+		font-size: 1.8rem;
+	}
+
+	@include breakpoint-down(tablet) {
+		padding: 1.4rem 2.2rem;
+	}
+}

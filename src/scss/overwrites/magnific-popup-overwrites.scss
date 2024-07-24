@@ -1,0 +1,37 @@
+/*==============================================
+	Magnific Popup Overwrites
+==============================================*/
+
+/* overlay at start */
+.mfp-fade.mfp-bg {
+	opacity: 0;
+	transition: all 0.2s ease-out;
+}
+
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+	opacity: 0.8;
+}
+
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+	opacity: 0;
+	transition-delay: 0.2s;
+}
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+	opacity: 0;
+	transition: all 0.2s 0.2s ease-out;
+}
+
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+	opacity: 1;
+}
+
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+	opacity: 0;
+	transition-delay: 0s;
+}

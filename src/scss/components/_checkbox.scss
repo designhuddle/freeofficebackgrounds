@@ -1,0 +1,56 @@
+// ==========================================================================
+// Checkbox
+// ==========================================================================
+
+.checkbox {
+	position: relative;
+
+	input {
+		appearance: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0;
+	}
+
+	input:checked + label:before {
+		background-color: var(--c-blue);
+	}
+
+	input:checked + label:after {
+		opacity: 1;
+	}
+
+	label {
+		font-size: 1.5rem;
+		font-weight: 500;
+		position: relative;
+		padding-left: 3rem;
+	}
+
+	label:before {
+		content: '';
+		position: absolute;
+		top: -0.3rem;
+		left: 0;
+		width: 2rem;
+		height: 2rem;
+		background-color: var(--c-white);
+		border: 2px solid var(--c-blue);
+		border-radius: 0.5rem;
+		transition: background-color var(--t-duration);
+	}
+
+	label:after {
+		content: '';
+		position: absolute;
+		top: -0.1rem;
+		left: 0.6rem;
+		width: 0.8rem;
+		height: 1.2rem;
+		border-right: 3px solid var(--c-white);
+		border-bottom: 3px solid var(--c-white);
+		transform: rotate(45deg);
+		transition: opacity var(--t-duration);
+	}
+}

@@ -1,0 +1,39 @@
+// ==========================================================================
+// Grid flex
+// ==========================================================================
+
+.grid-flex {
+	--grid-gutter: 2rem;
+
+	display: flex;
+	flex-flow: row wrap;
+	margin-inline: calc((var(--grid-gutter) / 2) * -1);
+
+	.grid__col {
+		--grid-cols: 1;
+
+		padding-inline: var(--grid-gutter);
+		max-width: calc(100% / var(--grid-cols));
+		flex: 0 0 calc(100% / var(--grid-cols));
+	}
+
+	.grid__col--1of2 {
+		--grid-cols: 2;
+	}
+
+	.grid__col--1of3 {
+		--grid-cols: 3;
+	}
+
+	.grid__col--1of4 {
+		--grid-cols: 4;
+	}
+
+	.grid__col--1of5 {
+		--grid-cols: 5;
+	}
+
+	.grid__col--1of6 {
+		--grid-cols: 6;
+	}
+}

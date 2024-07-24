@@ -1,0 +1,53 @@
+// ==========================================================================
+// Form
+// ==========================================================================
+
+.form {
+	.form__head {
+		text-align: center;
+		font-size: 2.2rem;
+		font-family: var(--ff-arial);
+		letter-spacing: -0.01em;
+		margin-bottom: 5.4rem;
+	}
+
+	h2 {
+		text-transform: uppercase;
+		font-size: 10.9rem;
+		font-family: var(--ff-bebas);
+		font-weight: 400;
+		letter-spacing: -0.027em;
+		line-height: 1;
+		margin-bottom: 0;
+	}
+
+	.form__body {
+		max-width: 46.4rem;
+		margin: 0 auto 5.4rem auto;
+	}
+
+	.form__label {
+		font-size: 1.6rem;
+		font-family: var(--ff-arial);
+		margin-bottom: 1rem;
+		display: inline-block;
+	}
+
+	.form__row + .form__row {
+		margin-top: 2rem;
+	}
+
+	.form__actions {
+		text-align: center;
+	}
+
+	.form__btn {
+		border: none;
+		outline: none;
+		appearance: none;
+		font-family: var(--ff-arial);
+		padding: 1.7rem 2rem;
+		font-size: 2.1rem;
+		min-width: 21.5rem;
+	}
+}

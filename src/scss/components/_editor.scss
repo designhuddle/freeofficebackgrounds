@@ -1,0 +1,19 @@
+#editor-page {
+	background-color: #f8f8fa;
+
+	.editor-content {
+		height: calc(100vh - 160px);
+
+		#editor-container {
+			height: 90%;
+		}
+
+		p {
+			height: 10%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding-bottom: 1rem;
+		}
+	}
+}

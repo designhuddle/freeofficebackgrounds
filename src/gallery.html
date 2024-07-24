@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+	{{> head }}
+	<body>
+		<div id="gallery-page" class="wrapper">
+			{{> header-v2 }}
+			<input type="file" class="file-input" style="display: none" />
+			<section class="section">
+				<div class="shell shell--fluid">
+					<div class="gallery grid grid--size-1of2"></div>
+					<!-- /.gallery -->
+				</div>
+				<!-- /.shell -->
+			</section>
+			<!-- /.section -->
+
+			<section class="section section--message">
+				<div class="shell">
+					<div class="section__inner">
+						<div class="section__logo">
+							<img src="assets/images/svg/logo.svg" width="80" height="80" alt="" />
+						</div>
+						<!-- /.section__logo -->
+
+						<p>Please use Free Office Backgrounds from a desktop computer for best experience.</p>
+					</div>
+					<!-- /.section__inner -->
+				</div>
+				<!-- /.shell -->
+			</section>
+			<!-- /.section -->
+
+			{{> popup-gallery-download }} {{> popup-download}} {{> popup-error }} {{> popup-error-alt }} {{>
+			popup-image-position }} {{> popup-background-color }} {{> template-loader}} {{> footer }}
+		</div>
+
+		<!-- /.wrapper -->
+
+		{{> scripts }}
+	</body>
+</html>
