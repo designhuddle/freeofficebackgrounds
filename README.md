@@ -32,10 +32,12 @@ Create a `.env` file in the root directory of the project:
 
 Open the .env file and add the following environment variables:
 
-- VITE_CLIENT_ID=xxx
 - VITE_DOMAIN=xxx
+- VITE_DSHD_DOMAIN=xxx
+- VITE_DSHD_CLIENT_ID=xxx
 - VITE_SPECIAL_USER_ACCESS_TOKEN=xxx
 - VITE_ENV_MODE=production
+- VITE_GOOGLE_ID=xxx (if using GTM)
 
 5. **Run the Application**
 
